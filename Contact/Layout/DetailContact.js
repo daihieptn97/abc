@@ -17,6 +17,7 @@ import HeaderImageScrollView, { TriggeringView } from 'react-native-image-header
 import SttBar from '../component/STTBar';
 
 export default class DetailContact extends Component {
+    
     constructor(props) {
         super(props);
         // console.log(JSON.stringify(this.props));

@@ -67,6 +67,7 @@ async function requestPermission(val) {
 
 }
 
+
 // type Props = {};
 class HomeSceen extends Component {
 
@@ -74,9 +75,10 @@ class HomeSceen extends Component {
     header: null
 
   };
-
-  async  componentWillMount() {
+  
+  async componentWillMount() {
     await requestPermission(this);
+    var daylademonhe = 1;
   }
 
   constructor(props) {
@@ -239,7 +241,6 @@ class HomeSceen extends Component {
       <Container>
         <SttBar />
         <Toolbar
-          leftElement="menu"
           centerElement="Danh bạ"
           searchable={{
             autoFocus: true,
@@ -251,7 +252,7 @@ class HomeSceen extends Component {
           rightElement={{
             menu: {
               icon: "more-vert",
-              labels: ["chỉnh sửa đầu số", "item 2"]
+              labels: ['Chọn nhiều',"Chỉnh sửa đầu số", "Nhập danh bạ từ file", 'Sao lưu']
             }
           }}
           onRightElementPress={(label) => { console.log(label) }}

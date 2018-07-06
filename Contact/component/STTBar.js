@@ -2,20 +2,16 @@ import React, { Component } from 'react';
 import { StyleSheet, StatusBar, View , Platform} from 'react-native';
 import { checkPermission } from 'react-native-contacts';
 
-
 const MyStatusBar = ({ backgroundColor, ...props }) => (
     <View style={[styles.statusBar, { backgroundColor }]}>
         <StatusBar translucent backgroundColor={backgroundColor} {...props} />
     </View>
 );
 
-
-
 export default class SttBar extends Component {
     checkOS(){
         if (Platform.OS === 'ios') {  
             <MyStatusBar
-              
                 barStyle="light-content"
             />
         }else{

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\a _ Lap Trinh\\rn-project\\React Native\\Contact\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pt-rPT\\values-pt-rPT.xml",
+            "outputFile": "D:\\a _ Lap Trinh\\rn-project\\abc\\Contact\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pt-rPT\\values-pt-rPT.xml",
             "map": [
                 {
                     "source": "C:\\Users\\HiepTran\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.0.1.aar\\e3ed9566ec5f939c3039f8c475a4cc0d\\res\\values-pt-rPT\\values-pt-rPT.xml",
