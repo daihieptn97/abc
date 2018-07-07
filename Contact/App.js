@@ -9,7 +9,7 @@ import {
   Platform,
   StyleSheet,
 
-  View, Image, Alert,
+  View, Image, Alert,Text,
   FlatList, PermissionsAndroid, TouchableOpacity, Dimensions
 } from 'react-native';
 
@@ -18,10 +18,11 @@ console.disableYellowBox = true;
 import ContactItem from "./component/ContactItem";
 var Contacts = require('react-native-contacts');
 
-import { Container, Content, List } from 'native-base';
+import { Container, Content, List, Button,Icon } from 'native-base';
 import SttBar from './component/STTBar';
 import { createStackNavigator } from 'react-navigation';
 import DetailContact from './Layout/DetailContact';
+import CreateContact from './Layout/CreateContact';
 
 import { Toolbar, ActionButton } from 'react-native-material-ui';
 
@@ -40,39 +41,37 @@ function readContact(val) {
     console.log("Loi doc danh ba : " + err);
   }
 }
-
 async function requestPermission(val) {
 
   Contacts.checkPermission((err, permission) => {
     if (err) throw err;
-  
+
     // Contacts.PERMISSION_AUTHORIZED || Contacts.PERMISSION_UNDEFINED || Contacts.PERMISSION_DENIED
     if (permission === 'undefined') {
       Contacts.requestPermission((err, permission) => {
         readContact(val);
       })
-    }else{
+    } else {
       readContact(val);
     }
     if (permission === 'authorized') {
       console.log("permission === 'authorized'");
-      
+
     }
     if (permission === 'denied') {
       console.log(permission === 'denied');
-      
+
     }
   })
-  
+
 
 }
-
 // type Props = {};
+
 class HomeSceen extends Component {
 
   static navigationOptions = {
     header: null
-
   };
 
   async  componentWillMount() {
@@ -89,8 +88,30 @@ class HomeSceen extends Component {
       per: false,
       refreshings: false,
       flagSearch: true,
-      flagShowBtnAdd: 'block'
+      flagShowBtnAdd: 'block',
 
+      toolOption: {
+        opacity: 0,
+        zIndex: -999,
+      },
+    }
+  }
+  _handlerToolbarOption = () => {
+
+    if (this.state.toolOption.opacity == 0) {
+      this.setState({
+        toolOption: {
+          opacity: 1,
+          zIndex: 999,
+        }
+      });
+    } else {
+      this.setState({
+        toolOption: {
+          opacity: 0,
+          zIndex: -999,
+        }
+      });
     }
   }
 
@@ -218,7 +239,7 @@ class HomeSceen extends Component {
     if (this.state.flagSearch) {
       return (
         <View>
-          <ActionButton icon="add"
+          <ActionButton icon="add" onPress={() => this.props.navigation.push('add')}
           />
         </View>
       )
@@ -237,9 +258,12 @@ class HomeSceen extends Component {
   render() {
     return (
       <Container>
-        <SttBar />
+        <ToolbarOptionSelect styleCustom={this.state.toolOption} />
         <Toolbar
-          leftElement="menu"
+          style={{
+            container: { paddingTop: (Platform.OS === 'ios') ? 20 : 0, },
+          }}
+
           centerElement="Danh bạ"
           searchable={{
             autoFocus: true,
@@ -248,13 +272,9 @@ class HomeSceen extends Component {
             onSearchPressed: () => { this.setState({ flagSearch: false }) },
             onSearchClosed: this._handlerSearchClosed
           }}
-          rightElement={{
-            menu: {
-              icon: "more-vert",
-              labels: ["chỉnh sửa đầu số", "item 2"]
-            }
-          }}
-          onRightElementPress={(label) => { console.log(label) }}
+          
+          // centerElement={<Icon name="more" />}
+          rightElement='more'
         />
 
         <FlatList
@@ -275,42 +295,40 @@ class HomeSceen extends Component {
   }
 }
 
+const screen = Dimensions.get('window');
 const styles = StyleSheet.create({
-  headerBtnItem: {
-    marginRight: 20,
+  toolbarOptionContainer: {
+    width: (screen.width / 3) + 10,
+    position: 'absolute',
+    top: 55,
+    right: 0,
+    backgroundColor: "#ffffff",
   },
-  conatinerImages: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#bebebe',
-  },
-  header: {
-    flexDirection: 'row',
-    backgroundColor: '#03a9f4',
-    height: 50,
-    paddingLeft: 10,
-    paddingRight: 10,
-    elevation: 6,
-    alignItems: 'center',
-    justifyContent: 'space-between',
-  },
-  headerTitle: {
-    fontSize: 25,
-    color: 'white',
-
-  },
-  headerBtn: {
-    alignItems: 'flex-end',
-    flexDirection: 'row',
-  }
 });
 
 
 export default App = createStackNavigator({
   home: HomeSceen,
-  detail: DetailContact
+  detail: DetailContact,
+  add: CreateContact
 }, {
-    initialRouteName: 'home'
+    initialRouteName: 'add'
   }
 );
+
+
+// toolbar option 
+const ToolbarOptionSelect = ({ styleCustom }) => (
+
+  <View style={[styles.toolbarOptionContainer,
+  { opacity: styleCustom.opacity, zIndex: styleCustom.zIndex, }]
+  }>
+    {console.log(styleCustom)}
+    <Button transparent>
+      <Text style={{ flex: 1, textAlign: 'center' }}>hello</Text>
+    </Button>
+    <Button transparent>
+      <Text style={{ flex: 1, textAlign: 'center' }}>hello</Text>
+    </Button>
+  </View>
+)
