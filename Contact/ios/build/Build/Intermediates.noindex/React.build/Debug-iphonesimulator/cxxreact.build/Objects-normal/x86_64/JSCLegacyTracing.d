@@ -1,5 +1,5 @@
 dependencies: \
-  /Users/dahieptn97/Code/rn-project/Contact/node_modules/react-native/ReactCommon/cxxreact/JSCLegacyTracing.cpp \
-  /Users/dahieptn97/Code/rn-project/Contact/node_modules/react-native/ReactCommon/cxxreact/JSCLegacyTracing.h \
-  /Users/dahieptn97/Code/rn-project/Contact/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JavaScriptCore.h \
-  /Users/dahieptn97/Code/rn-project/Contact/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JSCWrapper.h
+  /Users/dahieptn97/Code/rn-project/abc/Contact/node_modules/react-native/ReactCommon/cxxreact/JSCLegacyTracing.cpp \
+  /Users/dahieptn97/Code/rn-project/abc/Contact/node_modules/react-native/ReactCommon/cxxreact/JSCLegacyTracing.h \
+  /Users/dahieptn97/Code/rn-project/abc/Contact/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JavaScriptCore.h \
+  /Users/dahieptn97/Code/rn-project/abc/Contact/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JSCWrapper.h

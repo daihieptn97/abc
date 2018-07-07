@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\a _ Lap Trinh\\rn-project\\abc\\Contact\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-vi\\values-vi.xml",
+            "outputFile": "/Users/dahieptn97/Code/rn-project/abc/Contact/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-vi/values-vi.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\HiepTran\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.0.1.aar\\e3ed9566ec5f939c3039f8c475a4cc0d\\res\\values-vi\\values-vi.xml",
+                    "source": "/Users/dahieptn97/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/3c8e3dff697a7069185338dd6e888b57/res/values-vi/values-vi.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

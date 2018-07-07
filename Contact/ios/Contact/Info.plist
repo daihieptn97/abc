@@ -36,9 +36,9 @@
 		</dict>
 	</dict>
 	<key>NSContactsUsageDescription</key>
-	<string></string>
+	<string/>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
+	<string/>
 	<key>UIAppFonts</key>
 	<array>
 		<string>Ionicons.ttf</string>
@@ -70,6 +70,6 @@
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
 	<key>Privacy - Contacts Usage Description</key>
-	<string></string>
+	<string/>
 </dict>
 </plist>
