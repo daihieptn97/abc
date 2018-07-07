@@ -1,47 +1,38 @@
 import React, { Component } from 'react';
-import { StyleSheet, StatusBar, View , Platform} from 'react-native';
+import { StyleSheet, StatusBar, View, Platform } from 'react-native';
 
 const MyStatusBar = ({ backgroundColor, ...props }) => (
     <View style={[styles.statusBar, { backgroundColor }]}>
+        {console.log(...props)
+        }
         <StatusBar translucent backgroundColor={backgroundColor} {...props} />
     </View>
 );
 
-
-
 export default class SttBar extends Component {
-    checkOS(){
-        if (Platform.OS === 'ios') {  
-            <View style={styles.statusBar}>
-                <StatusBar translucent barStyle="light-content" />
-            </View>
-        }else{
+    checkOS() {
+        if (Platform.OS === 'ios') {
+            <StatusBar translucent barStyle="light-content" />
+        } else {
             return (
                 <MyStatusBar
-                    backgroundColor="#007ac1"
+                    {...this.props}
                     barStyle="light-content"
                 />
             );
         }
-        
     }
 
     render() {
         return (
-            <View style={styles.container}>
+            <View style={{ marginTop: Platform.OS === 'ios' ? 20 : 0, }}>
                 {this.checkOS()}
             </View>
         );
     }
 }
 
-const STATUSBAR_HEIGHT = Platform.OS === 'ios' ? 20 : StatusBar.currentHeight;
-
 const styles = StyleSheet.create({
-
-    statusBar: {
-        height: STATUSBAR_HEIGHT,
-    },
     content: {
         flex: 1,
         backgroundColor: '#33373B',

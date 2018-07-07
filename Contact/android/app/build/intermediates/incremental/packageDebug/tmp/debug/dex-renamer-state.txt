@@ -1,4 +1,4 @@
-#Fri Jul 06 17:10:44 ICT 2018
-base.0=/Users/dahieptn97/Code/rn-project/abc/Contact/android/app/build/intermediates/transforms/dexMerger/debug/0
+#Sat Jul 07 12:41:37 ICT 2018
+base.0=D\:\\a _ Lap Trinh\\rn-project\\abc\\Contact\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\16
 path.0=classes.dex
 renamed.0=classes.dex

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { StyleSheet, Dimensions, View, TouchableOpacity, Text, Platform } 
-from 'react-native';
+import { StyleSheet, Dimensions, View, TouchableOpacity, Text, Platform }
+    from 'react-native';
 import Icon from 'react-native-ionicons';
 
 // import RNPhoneCall from 'react-native-phone-call';
@@ -17,7 +17,7 @@ import HeaderImageScrollView, { TriggeringView } from 'react-native-image-header
 import SttBar from '../component/STTBar';
 
 export default class DetailContact extends Component {
-    
+
     constructor(props) {
         super(props);
         // console.log(JSON.stringify(this.props));
@@ -35,29 +35,31 @@ export default class DetailContact extends Component {
 
     _header = () => {
         return (
-            <View style={{ position: 'relative', 
-                marginTop: (Platform.OS === 'ios') ? 20 : 0, }}>
-                <Toolbar
-                    style={{ container: { backgroundColor: 'transparent', position: 'absolute', top: 0, width: screen.width, zIndex: 1, } }}
-                    leftElement="arrow-back"
-                    rightElement={{
-                        menu: {
-                            icon: "more-vert",
-                            labels: ["Xóa", "chia sẻ"]
-                        }
-                    }}
-                    onRightElementPress={(label) => { console.log(label) }}
-                    onLeftElementPress={() => this.props.navigation.goBack()}
-                />
+            <View style={{
+                marginTop: (Platform.OS === 'ios') ? 10 : 0,
+            }}>
+                <Header transparent style={{ marginTop: 0, }}>
+                    <Left>
+                        <Button transparent onPress={() => this.props.navigation.goBack()}>
+                            <Icon name='arrow-back' color="white" />
+                        </Button>
+                    </Left>
+                    <Right>
+                        <Button transparent >
+                            <Icon name='more' color="white" />
+                        </Button>
+                    </Right>
+
+                </Header>
                 {/* <Thumbnail square style={styles.avatar} source={{ uri: 'https://goo.gl/MTq5rV' }} /> */}
             </View>
         );
     }
 
     callNumber(number) {
-      /*   RNPhoneCall.call(number).then((data) => {
-            // do something
-        }); */
+        /*   RNPhoneCall.call(number).then((data) => {
+              // do something
+          }); */
     }
 
     ImageAvatar = () => {
@@ -87,7 +89,7 @@ export default class DetailContact extends Component {
     render() {
         return (
             <Container>
-                <SttBar/>
+                <SttBar />
                 <HeaderImageScrollView
                     maxHeight={250}
                     minHeight={56}
@@ -104,7 +106,6 @@ export default class DetailContact extends Component {
                         </ListItem>
 
                         <HR />
-
 
                         <ListItem noBorder>
                             <Body style={styles.control}>

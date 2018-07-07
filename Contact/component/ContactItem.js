@@ -1,16 +1,9 @@
 import React, { Component } from 'react';
-import { StyleSheet, View } from 'react-native';
-
-
+import { StyleSheet, View, Platform } from 'react-native';
 import {
     ListItem, Left, Body,
     Thumbnail, Text
 } from 'native-base';
-
-import DetailContact from "../Layout/DetailContact";
-
-import { createStackNavigator } from 'react-navigation';
-import App from '../App';
 
 const arrayColorAvatar = ['rgb(244, 67, 54)', 'rgb(103, 58, 183)', 'rgb(63, 81, 181)',
     'rgb(33, 150, 243)', 'rgb(76, 175, 80)', 'rgb(96, 125, 139)', 'rgb(0, 150, 136)'];
@@ -108,11 +101,14 @@ export default class ContactItem extends Component {
         );
     }
 }
+const paddingSizeIOS = Platform.OS === 'ios' ? 10 : 0;
 
 var styles = StyleSheet.create({
     ListItem: {
         borderBottomWidth: 0,
         borderWidth: 0,
+        marginTop: paddingSizeIOS,
+        marginBottom: paddingSizeIOS,
     },
     imagesAvatar: {
         backgroundColor: 'rgb(63, 81, 181)',

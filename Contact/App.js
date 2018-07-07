@@ -8,8 +8,8 @@ import React, { Component } from 'react';
 import {
   Platform,
   StyleSheet,
-
-  View, Image, Alert,Text,
+  StatusBar,
+  View, Image, Alert, Text,
   FlatList, PermissionsAndroid, TouchableOpacity, Dimensions
 } from 'react-native';
 
@@ -18,7 +18,7 @@ console.disableYellowBox = true;
 import ContactItem from "./component/ContactItem";
 var Contacts = require('react-native-contacts');
 
-import { Container, Content, List, Button,Icon } from 'native-base';
+import { Container, Content, List, Button, Icon, Right, Header } from 'native-base';
 import SttBar from './component/STTBar';
 import { createStackNavigator } from 'react-navigation';
 import DetailContact from './Layout/DetailContact';
@@ -26,16 +26,49 @@ import CreateContact from './Layout/CreateContact';
 
 import { Toolbar, ActionButton } from 'react-native-material-ui';
 
+function _loadNameCompare(params) {
+  {
+    try {
+      // console.log(this.props.value[0].item.phoneNumbers[0].number);
+
+      var givenName = (params.givenName != null) ? params.givenName : "";
+      var familyName = (params.familyName != null) ? params.familyName : "";
+      var middleName = (params.middleName != null) ? params.middleName : "";
+
+      return givenName + " " +
+        familyName + " " +
+        middleName + " ";
+    } catch (error) {
+      console.log("error");
+    }
+  }
+}
 function readContact(val) {
   try {
     console.log("Đã được cấp quyền !");
     Contacts.getAll((err, contacts) => {
       if (err) console.log("Loi doc danh ba : " + err);
+
+      contacts.sort(function (a, b) {
+        var nameA = _loadNameCompare(a).toUpperCase(); // ignore upper and lowercase
+        var nameB = _loadNameCompare(b).toUpperCase(); // ignore upper and lowercase
+        if (nameA < nameB) {
+          return -1;
+        }
+        if (nameA > nameB) {
+          return 1;
+        }
+
+        // names must be equal
+        return 0;
+      });
+
       val.setState({
         FullContact: contacts,
         DataContact: contacts,
         SeacrhContact: contacts
       });
+
     });
   } catch (err) {
     console.log("Loi doc danh ba : " + err);
@@ -102,7 +135,7 @@ class HomeSceen extends Component {
       this.setState({
         toolOption: {
           opacity: 1,
-          zIndex: 999,
+          zIndex: 9999,
         }
       });
     } else {
@@ -186,7 +219,6 @@ class HomeSceen extends Component {
     }
   }
 
-
   loadName(value) {
     {
       // get name contact
@@ -239,8 +271,15 @@ class HomeSceen extends Component {
     if (this.state.flagSearch) {
       return (
         <View>
-          <ActionButton icon="add" onPress={() => this.props.navigation.push('add')}
-          />
+          {/* <ActionButton icon="add" onPress={() => this.props.navigation.push('add')} /> */}
+          <ActionButton icon="add" onPress={() => {
+            var newPerson = {}
+            Contacts.openContactForm(newPerson, (err) => {
+              if (err) throw err;
+              // form is open
+            })
+
+          }} />
         </View>
       )
     }
@@ -257,13 +296,19 @@ class HomeSceen extends Component {
   }
   render() {
     return (
-      <Container>
+      <Container >
+
+        <Header style={{ height: Platform.OS === 'ios' ? 20 : StatusBar.currentHeight, }} >
+          <SttBar backgroundColor="#007ac1" />
+        </Header>
         <ToolbarOptionSelect styleCustom={this.state.toolOption} />
         <Toolbar
           style={{
-            container: { paddingTop: (Platform.OS === 'ios') ? 20 : 0, },
+            container: {
+              paddingTop: (Platform.OS === 'ios') ? 20 : 0,
+              flexDirection: 'row',
+            },
           }}
-
           centerElement="Danh bạ"
           searchable={{
             autoFocus: true,
@@ -271,11 +316,18 @@ class HomeSceen extends Component {
             onChangeText: this._handlerSearch,
             onSearchPressed: () => { this.setState({ flagSearch: false }) },
             onSearchClosed: this._handlerSearchClosed
+
           }}
-          
-          // centerElement={<Icon name="more" />}
-          rightElement='more'
-        />
+
+          rightElement={
+            <Button transparent onPress={this._handlerToolbarOption}>
+              <Icon name="more" color="white" />
+            </Button>
+          }
+          style={{ text: { color: 'white' } }}
+        >
+        </Toolbar>
+
 
         <FlatList
           onEndReachedThreshold={-1}
@@ -300,7 +352,7 @@ const styles = StyleSheet.create({
   toolbarOptionContainer: {
     width: (screen.width / 3) + 10,
     position: 'absolute',
-    top: 55,
+    top: Platform.OS === 'ios' ? 78 : 85,
     right: 0,
     backgroundColor: "#ffffff",
   },
@@ -312,7 +364,7 @@ export default App = createStackNavigator({
   detail: DetailContact,
   add: CreateContact
 }, {
-    initialRouteName: 'add'
+    initialRouteName: 'home'
   }
 );
 
@@ -321,14 +373,15 @@ export default App = createStackNavigator({
 const ToolbarOptionSelect = ({ styleCustom }) => (
 
   <View style={[styles.toolbarOptionContainer,
-  { opacity: styleCustom.opacity, zIndex: styleCustom.zIndex, }]
-  }>
-    {console.log(styleCustom)}
+  { opacity: styleCustom.opacity, zIndex: styleCustom.zIndex, }]}>
     <Button transparent>
-      <Text style={{ flex: 1, textAlign: 'center' }}>hello</Text>
+      <Text style={{ flex: 1, marginLeft: 14, }}>Sửa đầu số</Text>
     </Button>
     <Button transparent>
-      <Text style={{ flex: 1, textAlign: 'center' }}>hello</Text>
+      <Text style={{ flex: 1, marginLeft: 14, }}>Sao lưu</Text>
+    </Button>
+    <Button transparent>
+      <Text style={{ flex: 1, marginLeft: 14, }}>Thông tin</Text>
     </Button>
   </View>
 )
