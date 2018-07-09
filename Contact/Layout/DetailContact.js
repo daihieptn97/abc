@@ -2,19 +2,17 @@ import React, { Component } from 'react';
 import { StyleSheet, Dimensions, View, TouchableOpacity, Text, Platform }
     from 'react-native';
 import Icon from 'react-native-ionicons';
-
-// import RNPhoneCall from 'react-native-phone-call';
-
 import {
     Container, Header, Content,
     Thumbnail, Left, Right, Body, Button
     , List, ListItem,
 } from 'native-base';
-
 import { Toolbar, ActionButton } from 'react-native-material-ui';
 import HR from '../component/HrTag';
 import HeaderImageScrollView, { TriggeringView } from 'react-native-image-header-scroll-view';
 import SttBar from '../component/STTBar';
+import RNPhoneCall from 'react-native-phone-call';
+
 
 export default class DetailContact extends Component {
 
@@ -57,9 +55,14 @@ export default class DetailContact extends Component {
     }
 
     callNumber(number) {
-        /*   RNPhoneCall.call(number).then((data) => {
-              // do something
-          }); */
+        RNPhoneCall.call(number).then((data) => {
+            // do something
+        });
+    }
+    callNumber(number) {
+        RNPhoneCall.call(number).then((data) => {
+            // do something
+        });
     }
 
     ImageAvatar = () => {
@@ -109,7 +112,7 @@ export default class DetailContact extends Component {
 
                         <ListItem noBorder>
                             <Body style={styles.control}>
-                                <TouchableOpacity style={styles.control}>
+                                <TouchableOpacity style={styles.control} onPress={() => this.callNumber(this.state.value.phone)}>
                                     <Icon name='call' color={this.COLOR_BUTTON} />
                                     <Text note>Gọi</Text>
                                 </TouchableOpacity>
@@ -193,8 +196,3 @@ const styles = StyleSheet.create({
 
 });
 
-/*
-<Text> Man hinh detail</Text>
-    <Text>
-        {JSON.stringify(this.props)}
-    </Text> */

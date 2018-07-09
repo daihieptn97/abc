@@ -5,6 +5,7 @@ INJECTED from D:\a _ Lap Trinh\rn-project\abc\Contact\android\app\src\main\Andro
 INJECTED from D:\a _ Lap Trinh\rn-project\abc\Contact\android\app\src\main\AndroidManifest.xml:1:1-28:12
 INJECTED from D:\a _ Lap Trinh\rn-project\abc\Contact\android\app\src\main\AndroidManifest.xml:1:1-28:12
 MERGED from [:react-native-contacts] D:\a _ Lap Trinh\rn-project\abc\Contact\node_modules\react-native-contacts\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-13:12
+MERGED from [:react-native-phone-call] D:\a _ Lap Trinh\rn-project\abc\Contact\node_modules\react-native-phone-call\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-17:12
 MERGED from [com.facebook.react:react-native:0.55.4] C:\Users\HiepTran\.gradle\caches\transforms-1\files-1.1\react-native-0.55.4.aar\52465c51a4bb30e1284a29271a3d495c\AndroidManifest.xml:2:1-15:12
 MERGED from [com.android.support:appcompat-v7:23.0.1] C:\Users\HiepTran\.gradle\caches\transforms-1\files-1.1\appcompat-v7-23.0.1.aar\8c5a75cde9030da0c9b8574d5a0b1baa\AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:support-v4:23.0.1] C:\Users\HiepTran\.gradle\caches\transforms-1\files-1.1\support-v4-23.0.1.aar\d710fd6fb961a3721b6a7b754265a818\AndroidManifest.xml:17:1-24:12
@@ -106,6 +107,8 @@ INJECTED from D:\a _ Lap Trinh\rn-project\abc\Contact\android\app\src\main\Andro
 INJECTED from D:\a _ Lap Trinh\rn-project\abc\Contact\android\app\src\main\AndroidManifest.xml
 MERGED from [:react-native-contacts] D:\a _ Lap Trinh\rn-project\abc\Contact\node_modules\react-native-contacts\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-contacts] D:\a _ Lap Trinh\rn-project\abc\Contact\node_modules\react-native-contacts\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-phone-call] D:\a _ Lap Trinh\rn-project\abc\Contact\node_modules\react-native-phone-call\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-phone-call] D:\a _ Lap Trinh\rn-project\abc\Contact\node_modules\react-native-phone-call\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.55.4] C:\Users\HiepTran\.gradle\caches\transforms-1\files-1.1\react-native-0.55.4.aar\52465c51a4bb30e1284a29271a3d495c\AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.55.4] C:\Users\HiepTran\.gradle\caches\transforms-1\files-1.1\react-native-0.55.4.aar\52465c51a4bb30e1284a29271a3d495c\AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:appcompat-v7:23.0.1] C:\Users\HiepTran\.gradle\caches\transforms-1\files-1.1\appcompat-v7-23.0.1.aar\8c5a75cde9030da0c9b8574d5a0b1baa\AndroidManifest.xml:20:5-43
@@ -139,8 +142,22 @@ INJECTED from D:\a _ Lap Trinh\rn-project\abc\Contact\android\app\src\main\Andro
 		ADDED from D:\a _ Lap Trinh\rn-project\abc\Contact\android\app\src\main\AndroidManifest.xml
 		INJECTED from D:\a _ Lap Trinh\rn-project\abc\Contact\android\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-IMPLIED from D:\a _ Lap Trinh\rn-project\abc\Contact\android\app\src\main\AndroidManifest.xml:1:1-28:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
+ADDED from [:react-native-phone-call] D:\a _ Lap Trinh\rn-project\abc\Contact\node_modules\react-native-phone-call\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:11:5-81
+	android:name
+		ADDED from [:react-native-phone-call] D:\a _ Lap Trinh\rn-project\abc\Contact\node_modules\react-native-phone-call\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:11:22-78
 uses-permission#android.permission.READ_PHONE_STATE
-IMPLIED from D:\a _ Lap Trinh\rn-project\abc\Contact\android\app\src\main\AndroidManifest.xml:1:1-28:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
+ADDED from [:react-native-phone-call] D:\a _ Lap Trinh\rn-project\abc\Contact\node_modules\react-native-phone-call\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:12:5-75
+	android:name
+		ADDED from [:react-native-phone-call] D:\a _ Lap Trinh\rn-project\abc\Contact\node_modules\react-native-phone-call\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:12:22-72
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-IMPLIED from D:\a _ Lap Trinh\rn-project\abc\Contact\android\app\src\main\AndroidManifest.xml:1:1-28:12 reason: org.webkit.android_jsc requested WRITE_EXTERNAL_STORAGE
+ADDED from [:react-native-phone-call] D:\a _ Lap Trinh\rn-project\abc\Contact\node_modules\react-native-phone-call\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:13:5-80
+	android:name
+		ADDED from [:react-native-phone-call] D:\a _ Lap Trinh\rn-project\abc\Contact\node_modules\react-native-phone-call\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:13:22-77
+uses-permission#android.permission.CALL_PHONE
+ADDED from [:react-native-phone-call] D:\a _ Lap Trinh\rn-project\abc\Contact\node_modules\react-native-phone-call\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:14:5-69
+	android:name
+		ADDED from [:react-native-phone-call] D:\a _ Lap Trinh\rn-project\abc\Contact\node_modules\react-native-phone-call\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:14:22-66
+uses-permission#android.permission.READ_CALL_LOG
+ADDED from [:react-native-phone-call] D:\a _ Lap Trinh\rn-project\abc\Contact\node_modules\react-native-phone-call\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:15:5-72
+	android:name
+		ADDED from [:react-native-phone-call] D:\a _ Lap Trinh\rn-project\abc\Contact\node_modules\react-native-phone-call\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:15:22-69

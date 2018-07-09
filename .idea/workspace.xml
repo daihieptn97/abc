@@ -2,13 +2,78 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf727343-9209-4afe-bf6a-335b93a7de90" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contact/Layout/DetailContact.js" beforeDir="false" afterPath="$PROJECT_DIR$/Contact/Layout/DetailContact.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contact/android/.gradle/4.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Contact/android/.gradle/4.4/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contact/android/.gradle/4.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Contact/android/.gradle/4.4/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contact/android/.gradle/4.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Contact/android/.gradle/4.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contact/android/.gradle/4.4/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Contact/android/.gradle/4.4/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contact/android/.gradle/4.4/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Contact/android/.gradle/4.4/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contact/android/.gradle/4.4/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Contact/android/.gradle/4.4/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contact/android/.gradle/4.4/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Contact/android/.gradle/4.4/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contact/android/.gradle/4.4/javaCompile/taskJars.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Contact/android/.gradle/4.4/javaCompile/taskJars.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contact/android/.gradle/4.4/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Contact/android/.gradle/4.4/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contact/android/.gradle/4.4/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Contact/android/.gradle/4.4/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contact/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Contact/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contact/android/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Contact/android/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contact/android/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Contact/android/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contact/android/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Contact/android/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contact/android/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Contact/android/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contact/android/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Contact/android/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contact/android/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Contact/android/app/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contact/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Contact/android/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contact/android/app/build/intermediates/classes/debug/com/contact/MainActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/Contact/android/app/build/intermediates/classes/debug/com/contact/MainActivity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contact/android/app/build/intermediates/classes/debug/com/contact/MainApplication$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Contact/android/app/build/intermediates/classes/debug/com/contact/MainApplication$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contact/android/app/build/intermediates/classes/debug/com/contact/MainApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/Contact/android/app/build/intermediates/classes/debug/com/contact/MainApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contact/android/app/build/intermediates/incremental/debug-mergeJavaRes/merge-state" beforeDir="false" afterPath="$PROJECT_DIR$/Contact/android/app/build/intermediates/incremental/debug-mergeJavaRes/merge-state" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contact/android/app/build/intermediates/incremental/debug-mergeJniLibs/merge-state" beforeDir="false" afterPath="$PROJECT_DIR$/Contact/android/app/build/intermediates/incremental/debug-mergeJniLibs/merge-state" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contact/android/app/build/intermediates/incremental/mergeDebugAssets/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Contact/android/app/build/intermediates/incremental/mergeDebugAssets/merger.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contact/android/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Contact/android/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contact/android/app/build/intermediates/incremental/mergeDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Contact/android/app/build/intermediates/incremental/mergeDebugResources/merger.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contact/android/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Contact/android/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contact/android/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/+CHBPnD1KS0hc9dKXiATl4xnhes=" beforeDir="false" afterPath="$PROJECT_DIR$/Contact/android/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/+CHBPnD1KS0hc9dKXiATl4xnhes=" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contact/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Contact/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contact/android/app/build/intermediates/res/debug/resources-debug.ap_" beforeDir="false" afterPath="$PROJECT_DIR$/Contact/android/app/build/intermediates/res/debug/resources-debug.ap_" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contact/android/app/build/intermediates/transforms/dexBuilder/debug/107/com/contact/MainActivity.dex" beforeDir="false" afterPath="$PROJECT_DIR$/Contact/android/app/build/intermediates/transforms/dexBuilder/debug/107/com/contact/MainActivity.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contact/android/app/build/intermediates/transforms/dexBuilder/debug/107/com/contact/MainApplication$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/Contact/android/app/build/intermediates/transforms/dexBuilder/debug/107/com/contact/MainApplication$1.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contact/android/app/build/intermediates/transforms/dexBuilder/debug/107/com/contact/MainApplication.dex" beforeDir="false" afterPath="$PROJECT_DIR$/Contact/android/app/build/intermediates/transforms/dexBuilder/debug/107/com/contact/MainApplication.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contact/android/app/build/intermediates/transforms/dexBuilder/debug/__content__.json" beforeDir="false" afterPath="$PROJECT_DIR$/Contact/android/app/build/intermediates/transforms/dexBuilder/debug/__content__.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contact/android/app/build/intermediates/transforms/dexMerger/debug/16/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/Contact/android/app/build/intermediates/transforms/dexMerger/debug/16/classes.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contact/android/app/build/intermediates/transforms/dexMerger/debug/__content__.json" beforeDir="false" afterPath="$PROJECT_DIR$/Contact/android/app/build/intermediates/transforms/dexMerger/debug/__content__.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contact/android/app/build/intermediates/transforms/mergeJavaRes/debug/__content__.json" beforeDir="false" afterPath="$PROJECT_DIR$/Contact/android/app/build/intermediates/transforms/mergeJavaRes/debug/__content__.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contact/android/app/build/intermediates/transforms/mergeJniLibs/debug/__content__.json" beforeDir="false" afterPath="$PROJECT_DIR$/Contact/android/app/build/intermediates/transforms/mergeJniLibs/debug/__content__.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contact/android/app/build/outputs/apk/debug/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/Contact/android/app/build/outputs/apk/debug/app-debug.apk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contact/android/app/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Contact/android/app/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contact/android/app/src/main/java/com/contact/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/Contact/android/app/src/main/java/com/contact/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contact/android/app/src/main/java/com/contact/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Contact/android/app/src/main/java/com/contact/MainApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contact/android/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Contact/android/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contact/ios/Contact.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/Contact/ios/Contact.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contact/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Contact/package.json" afterDir="false" />
     </list>
+    <ignored path="$PROJECT_DIR$/Contact/node_modules/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="App.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Contact/App.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="512">
+              <caret line="365" column="4" lean-forward="true" selection-start-line="365" selection-start-column="4" selection-end-line="365" selection-end-column="4" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -16,6 +81,13 @@
       <map>
         <entry key="$PROJECT_DIR$" value="mac" />
       </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Contact/App.js" />
+      </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -28,14 +100,16 @@
     <handled-path value="$PROJECT_DIR$/Contact/node_modules" />
   </component>
   <component name="NodePackageJsonFileManager">
-    <packageJsonPaths />
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/Contact/package.json" />
+    </packageJsonPaths>
   </component>
   <component name="PhpServers">
     <servers />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="1226" />
-    <option name="y" value="-263" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1382" />
     <option name="height" value="754" />
   </component>
@@ -59,10 +133,6 @@
               <item name="abc" type="462c0819:PsiDirectoryNode" />
               <item name="Contact" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="abc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -72,6 +142,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="C:/xampp/htdocs/PHP/Larvel/shopoke" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -92,13 +163,15 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b459da1b-30d6-42cb-84b7-2b9359a11238" name="Default" comment="" />
+      <changelist id="bf727343-9209-4afe-bf6a-335b93a7de90" name="Default" comment="" />
       <created>1530937408458</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1530937408458</updated>
       <workItem from="1530937412149" duration="364000" />
       <workItem from="1530937787923" duration="740000" />
+      <workItem from="1531036337317" duration="269000" />
+      <workItem from="1531119573842" duration="223000" />
     </task>
     <task id="LOCAL-00001" summary="cmt">
       <created>1530938001512</created>
@@ -110,12 +183,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1104000" />
+    <option name="totallyTimeSpent" value="1596000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1358" y="-256" width="1296" height="1010" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17447917" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -145,5 +219,27 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="cmt" />
     <option name="LAST_COMMIT_MESSAGE" value="cmt" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Contact/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5661">
+          <caret line="333" column="1" lean-forward="true" selection-start-line="333" selection-start-column="1" selection-end-line="333" selection-end-column="1" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Contact/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="365" column="4" lean-forward="true" selection-start-line="365" selection-start-column="4" selection-end-line="365" selection-end-column="4" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

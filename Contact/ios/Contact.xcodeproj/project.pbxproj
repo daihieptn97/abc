@@ -52,6 +52,7 @@
 		D2FF8652DC8D49D68BD50F38 /* Roboto_medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9B8FA25867646CFA381508C /* Roboto_medium.ttf */; };
 		D35D3271D6B6460B97B5F8BC /* Roboto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 853C29FE3C8F4A84AFD9BB7C /* Roboto.ttf */; };
 		FE6716FF17C84E8A84D50B47 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9A1C97CF50A2493BB8E865AC /* Foundation.ttf */; };
+		C0A14A23F3EA4731A26B1554 /* libRNPhoneCall.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BFD372E23604F63971EE413 /* libRNPhoneCall.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -380,6 +381,8 @@
 		BBEB638EE58C43829F3864FA /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/native-base/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
 		BE3E2E05B6C84E0ABFAF1092 /* rubicon-icon-font.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "rubicon-icon-font.ttf"; path = "../node_modules/native-base/Fonts/rubicon-icon-font.ttf"; sourceTree = "<group>"; };
 		E39AD5F1EE8A46DA82BFF158 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/native-base/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
+		27E21666FFBA4BAE9B8A38EE /* RNPhoneCall.xcodeproj */ = {isa = PBXFileReference; name = "RNPhoneCall.xcodeproj"; path = "../node_modules/react-native-phone-call/ios/RNPhoneCall.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		4BFD372E23604F63971EE413 /* libRNPhoneCall.a */ = {isa = PBXFileReference; name = "libRNPhoneCall.a"; path = "libRNPhoneCall.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -409,6 +412,7 @@
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				473447DCDD03430BB1ADFBE4 /* libRCTContacts.a in Frameworks */,
+				C0A14A23F3EA4731A26B1554 /* libRNPhoneCall.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -612,6 +616,7 @@
 				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
 				05D33A65AC39470E94748526 /* RCTContacts.xcodeproj */,
+				27E21666FFBA4BAE9B8A38EE /* RNPhoneCall.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -1283,12 +1288,14 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)..\node_modules\neact-native-contactsiosRCTContacts",
+					"$(SRCROOT)\..\node_modules\react-native-phone-call\ios",
 				);
 				INFOPLIST_FILE = ContactTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
@@ -1309,12 +1316,14 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)..\node_modules\neact-native-contactsiosRCTContacts",
+					"$(SRCROOT)\..\node_modules\react-native-phone-call\ios",
 				);
 				INFOPLIST_FILE = ContactTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
@@ -1336,6 +1345,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)..\node_modules\neact-native-contactsiosRCTContacts",
+					"$(SRCROOT)\..\node_modules\react-native-phone-call\ios",
 				);
 				INFOPLIST_FILE = Contact/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1359,6 +1369,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)..\node_modules\neact-native-contactsiosRCTContacts",
+					"$(SRCROOT)\..\node_modules\react-native-phone-call\ios",
 				);
 				INFOPLIST_FILE = Contact/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1388,11 +1399,13 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)..\node_modules\neact-native-contactsiosRCTContacts",
+					"$(SRCROOT)\..\node_modules\react-native-phone-call\ios",
 				);
 				INFOPLIST_FILE = "Contact-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
@@ -1422,11 +1435,13 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)..\node_modules\neact-native-contactsiosRCTContacts",
+					"$(SRCROOT)\..\node_modules\react-native-phone-call\ios",
 				);
 				INFOPLIST_FILE = "Contact-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
@@ -1455,11 +1470,13 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)..\node_modules\neact-native-contactsiosRCTContacts",
+					"$(SRCROOT)\..\node_modules\react-native-phone-call\ios",
 				);
 				INFOPLIST_FILE = "Contact-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
@@ -1488,11 +1505,13 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)..\node_modules\neact-native-contactsiosRCTContacts",
+					"$(SRCROOT)\..\node_modules\react-native-phone-call\ios",
 				);
 				INFOPLIST_FILE = "Contact-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
