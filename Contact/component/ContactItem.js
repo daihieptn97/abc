@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { StyleSheet, View, Platform } from 'react-native';
 import {
     ListItem, Left, Body,
-    Thumbnail, Text
+    Thumbnail, Text, SwipeRow, Button, Icon, Container, Content
 } from 'native-base';
 
 const arrayColorAvatar = ['rgb(244, 67, 54)', 'rgb(103, 58, 183)', 'rgb(63, 81, 181)',
@@ -89,6 +89,7 @@ export default class ContactItem extends Component {
 
     render() {
         return (
+            // <ListItem>
             <ListItem noBorder button avatar onPress={this._dataMovingDetailContact}>
                 <Left>
                     {this.ImageAvatar()}

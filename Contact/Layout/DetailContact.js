@@ -36,7 +36,7 @@ export default class DetailContact extends Component {
     _header = () => {
         return (
             <View style={{
-                marginTop: (Platform.OS === 'ios') ? 10 : 0,
+                marginTop: (Platform.OS === 'ios') ? 0 : 0,
             }}>
                 <Header transparent style={{ marginTop: 0, }}>
                     <Left>
